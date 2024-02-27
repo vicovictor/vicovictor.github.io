@@ -27,11 +27,26 @@
       margin-right: 0;
     }
   </style>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+      const quotes = [
+        "I'm crazy, but I'm not stupid.",
+        "Luck does not necessarily imply correctness.", 
+        "Great UX is designing for <strike><em>stupid</em></strike> virgin users.",
+        "UX > UI",
+        "Always leave room for improvement.",
+        "Ship minimum viable products fast, not shit products fast.",
+        "You can't be good at everything, but you can be good at nothing."
+      ];
+      const random = Math.floor(Math.random() * quotes.length);
+      var quoteEl = document.getElementsByClassName("quote")[0];
+      quoteEl.innerHTML += quotes[random]; 
+    });
+  </script>
 </head>
-
 <body>
   <div>
-    <blockquote>I am crazy, but I am not stupid.</blockquote>
+    <blockquote class="quote"></blockquote>
     <p style="color:#ddd">—</p>
     <p class="links">
       <small>
