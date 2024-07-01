@@ -20,6 +20,10 @@
       text-align: center;
     }
 
+    body main {
+      width: 80;
+    }
+
     .links a {
       text-decoration: none;
       margin-right: 1rem;
@@ -35,11 +39,12 @@
         "I'm crazy, but I'm not stupid.",
         "Luck does not necessarily imply correctness.", 
         "Great UX is designing for <strike><em>stupid</em></strike> virgin users.",
-        "UX > UI",
+        "(Functional Product + UX) > UI",
         "Always leave room for improvement.",
         "Ship minimum viable products fast, not 💩 products fast.",
         "If everything you have is taken away, what remains of you?",
-        "Not everyone should be the same; embrace differences in every way. 👩🏼‍🦰👦👩🏻👨🏽🧑🏼👩🏽‍🦱🧑🏿‍🦱"
+        "Not everyone is/should be the same as you; embrace differences in every way. 👩🏼‍🦰👦👩🏻👨🏽🧑🏼👩🏽‍🦱🧑🏿‍🦱",
+        "So, I ran a tight process. I trusted my team. I listened to every voice in the room. I gave myself space to think. And then I made a decision that reflected my own personal sense of what was right. While I couldn’t guarantee the outcome, I was confident in making the decision. \<br\>\<br\>\<em\>- Barak Obama\<em\>"
       ];
       const random = Math.floor(Math.random() * quotes.length);
       var quoteEl = document.getElementsByClassName("quote")[0];
@@ -48,7 +53,7 @@
   </script>
 </head>
 <body>
-  <div>
+  <main>
     <blockquote class="quote"></blockquote>
     <p style="color:#ddd">—</p>
     <p class="links">
@@ -58,6 +63,6 @@
         <a href="mario/index.html" style="color:#b95425;">Super Mario Bros</a>
       </small>
     </p>
-  </div>
+  </main>
 </body>
 </html>
